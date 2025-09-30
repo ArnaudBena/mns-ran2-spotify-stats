@@ -9,13 +9,10 @@ for record in dataset:
         subscriptionType = record["subscription_type"]
 
         if country not in mrrCountry:
-            mrrCountry[country] = {
-                "Premium":0,
-                "Family":0,
-                "Student":0,
-            }
+            mrrCountry[country] = {"Premium":0, "Family":0, "Student":0,}
         mrrCountry[country][subscriptionType] += 1
-        
+
+
 for country in mrrCountry:
     print(f"{country}")
     for plan in mrrCountry[country]:
