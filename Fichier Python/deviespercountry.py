@@ -17,8 +17,3 @@ for country in countries:
     print(f"{country}")
     print(f"Le device le plus utilisé est {max(countries[country], key = countries[country].get)}")
 
-# for country in countries:
-#     print(f"\nPays : {country}")
-#     print(f"Utilisation par device : {countries[country]}")
-#     top_device = max(countries[country], key=countries[country].get)
-#     print(f"➡️ Le device le plus utilisé est : {top_device}")
